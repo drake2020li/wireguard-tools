@@ -22,4 +22,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: wireguard-tools
-        path: /home/runner/work/wireguard-tools/wireguard-tools/src/wg
+        path: /home/runner/work/wireguard-tools/wireguard-tools/src
