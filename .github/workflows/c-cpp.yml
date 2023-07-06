@@ -9,14 +9,14 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest-arm64
 
     steps:
     - uses: actions/checkout@v3
     - name: make
       run: |
         cd /home/runner/work/wireguard-tools/wireguard-tools/src
-        make ARCH=arm64
+        make
         sudo make install
 
     - name: Upload artifacts
