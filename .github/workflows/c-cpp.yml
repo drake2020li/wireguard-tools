@@ -17,9 +17,5 @@ jobs:
       run: |
         cd /home/runner/work/wireguard-tools/wireguard-tools/src
         make ARCH=arm64
-     
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: wireguard-tools
-        path: /home/runner/work/wireguard-tools/wireguard-tools/src
+        make install
+
