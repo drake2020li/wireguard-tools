@@ -23,4 +23,12 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: wireguard-tools
-        path: /usr/bin/wg
+        path: |
+          /usr/bin/wg
+          /usr/share/man/man8/wg.8
+          /usr/share/bash-completion/completions/wg
+          /usr/bin/wg-quick
+          /usr/share/man/man8/wg-quick.8
+          /usr/share/bash-completion/completions/wg-quick
+          /lib/systemd/system/wg-quick.target
+          /lib/systemd/system/wg-quick@.service
