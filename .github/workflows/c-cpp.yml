@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: configure
       run: |
-        cd ./src
+        cd /home/runner/work/wireguard-tools/wireguard-tools/src
         configure
     - name: make
       run: make ARCH=arm64
@@ -28,4 +28,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: wireguard-tools
-        path: ./src/wg
+        path: /home/runner/work/wireguard-tools/wireguard-tools/src/wg
